@@ -1,0 +1,70 @@
+body {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+  }
+  
+  .horloge {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .horloge img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+
+  }
+  
+  .grandeaiguille,
+  .petiteaiguille,
+  .trotteuse,
+  .vis {
+    position: absolute;
+    transform-origin: 50% 100%;
+    transition: transform 0.5s ease-in-out;
+    border-radius: 50px 50px 0px 15px;
+  }
+  
+  .grandeaiguille {
+    width: 8px;
+    height: 120px;
+    top: 34px;
+    left: 150px;
+    background-color: #333;
+    /* 34  */
+  }
+  
+  .petiteaiguille {
+    width: 6px;
+    height: 90px;
+    top: 63px;
+    left: 150px;
+    background-color: #000000;
+  }
+  
+  .trotteuse {
+    width: 2px;
+    height: 140px;
+    top: 11px;
+    left: 150px;
+    background-color: red; /* You can change the color for the second hand */
+  }
+  
+  .vis {
+    width: 6px;
+    height: 6px;
+    top: 148px;
+    left: 148px;
+    background-color: rgb(255, 213, 0);
+  }
+  
